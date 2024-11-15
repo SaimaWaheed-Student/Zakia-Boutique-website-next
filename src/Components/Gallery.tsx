@@ -11,8 +11,8 @@ interface GalleryItemProps {
       <Image
       src={image}
       alt="description"
-      width={200}
-      height={200}
+      width={400}
+      height={400}
        className="w-full h-64 object-cover rounded-lg shadow-lg" />
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
         <div className="text-center text-white">
@@ -25,7 +25,7 @@ interface GalleryItemProps {
   
   const Gallery = () => {
     const items = [
-      {image: '/images/img-3.jpg', description: 'Elegant sky blue garara', price: '120' },
+      { image: '/images/img-3.jpg', description: 'Elegant sky blue garara', price: '120' },
       { image: '/images/img-4.jpg', description: 'Stylish white suit', price: '150' },
       { image: '/images/img-5.jpeg', description: 'Classic orange Suit', price: '200' },
       { image: '/images/img-6.jpg', description: 'Floral light aqua garara', price: '90' },
