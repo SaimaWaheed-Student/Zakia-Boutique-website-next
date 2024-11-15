@@ -1,3 +1,4 @@
+import React from "react";
 interface GalleryItemProps {
     image: string;
     description: string;
