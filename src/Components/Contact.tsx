@@ -13,7 +13,7 @@ const Contact = () => (
             <input type="email" placeholder="Your Email" className="w-full p-3 rounded-lg border border-gray-300" />
           </div>
           <div className="mb-4">
-            <textarea placeholder="Your Message" className="w-full p-3 rounded-lg border border-gray-300" rows="5"></textarea>
+            <textarea placeholder="Your Message" className="w-full p-3 rounded-lg border border-gray-300" rows={5}></textarea>
           </div>
           <button type="submit" className="bg-pink-500 px-6 py-3 rounded-full text-lg font-semibold hover:bg-pink-600">Send Message</button>
         </form>
