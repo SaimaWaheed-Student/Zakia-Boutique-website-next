@@ -1,13 +1,19 @@
 import React from "react";
+import Image from "next/image";
 interface GalleryItemProps {
     image: string;
     description: string;
     price: string;
   }
   
-  const GalleryItem: React.FC<GalleryItemProps> = ({ image, description, price }) => (
+  const GalleryItem: React.FC<GalleryItemProps> = ({ image,description, price }) => (
     <div className="relative group">
-      <img src={image} alt={description} className="w-full h-64 object-cover rounded-lg shadow-lg" />
+      <Image
+      src={image}
+      alt="description"
+      width={400}
+      height={400}
+       className="w-full h-64 object-cover rounded-lg shadow-lg" />
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
         <div className="text-center text-white">
           <p className="text-lg font-semibold">{description}</p>
@@ -19,7 +25,7 @@ interface GalleryItemProps {
   
   const Gallery = () => {
     const items = [
-      { image: '/images/img-3.jpg', description: 'Elegant sky blue garara', price: '120' },
+      {image: '/images/img-3.jpg', description: 'Elegant sky blue garara', price: '120' },
       { image: '/images/img-4.jpg', description: 'Stylish white suit', price: '150' },
       { image: '/images/img-5.jpeg', description: 'Classic orange Suit', price: '200' },
       { image: '/images/img-6.jpg', description: 'Floral light aqua garara', price: '90' },
