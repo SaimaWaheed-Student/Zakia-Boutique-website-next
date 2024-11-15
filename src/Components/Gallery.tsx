@@ -11,8 +11,8 @@ interface GalleryItemProps {
       <Image
       src={image}
       alt="description"
-      width={400}
-      height={400}
+      width={200}
+      height={200}
        className="w-full h-64 object-cover rounded-lg shadow-lg" />
       <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
         <div className="text-center text-white">
